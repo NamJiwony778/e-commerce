@@ -42,7 +42,7 @@ class SignUp  extends React.Component {
         }
     }
 
-    handleChnage = event => {
+    handleChange = event => {
         const { name, value } = event.target;
 
         this.setState({[name]: value});
@@ -65,7 +65,7 @@ class SignUp  extends React.Component {
                     onChange={this.handleChnage} label='Password' required/>
 
                     <FormInput type='password' name='confirmPassword' value={confirmPassword}
-                    onChange={this.handleChnage} label='Confirm Password' required/>
+                    onChange={this.handleChange} label='Confirm Password' required/>
                     <CustomButton type='submit'>SIGN UP</CustomButton>
                 </form>
 
